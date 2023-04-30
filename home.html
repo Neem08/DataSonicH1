@@ -1,53 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #ffffff;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(36, 216, 13, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-</style>
 </head>
-<body>
-
-<h1><b>Categories</b></h1>
+<style>
 
 
-<div class="grid-container">
-    <div class="grid1">
-        <a href="#" class="grid-shadow ">
-       Fruits
-        </a>
-    </div>
-    <div class="grid2">
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid rgb(100, 247, 166);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
-    </div>
-    
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+} 
+.section6_div{
+display: flex;
+min-height: 400px;
+justify-content: space-between;
+padding-bottom: 2em;
+align-items: flex-end;
+}
 
 
-    <form class="grid-container">
-
-        
-  <div class="grid-item">Categories</div>
- 
+#section6_div1{
+    width: 50%;
+    margin: 3em auto 1.5em auto;
+    text-align: center;
+    }
+    .section6_outerdiv{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .section6_div_div{
+        align-items: center;
+        min-height: 272px;
+        width: 20%;
+        border-radius: 1000px;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.692);
+        text-align: center;
+        background-color: rgb(100, 247, 166);
+    }
+    .section6_div_div h4{
+        color: white;
+        font-size: 1.1rem;
+    }
+    #section6div1, #section6div3{
+        align-self: flex-start;
+    }
+    .reviewhead{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+    #verified{
+        height: 20px;
+        width: 20px;
+    }
+    .section6_div_div p{
+        color: white;
+        padding: 0 2em 0 2em;
+    }
+.chat{
+  text-align: center;
   
-  <div class="grid-item">Items</div>
-   
- 
-</div>
+}
+.btn{
+  width: 143px;
+  height: 93px;
+  font-size: 29px;
+}
+</style>
+<body>
+    <section id="services-container">
+        
+        <h1 class="h-primary-center" >Category</h1>
+        <section background="bg4.jpeg">
+        <div id="services">
+            <div class="box">
+                 <img src="fruit.jpeg" alt="l1"> 
+                <h2 class="h-secondary center">FRUITS & VEGETABLES</h2> 
+                <a href="fruit.html">FRUITS & VEGETABLES</a>
+                
+            </div>
+            <div class="box">
+               <img src="hcooked.jpeg" alt="hcome">
+                <h2 class="h-secondary center">HOME COOKED</h2>
+                <a href="hcooked.html">HOME COOKED FOOD</a>
+            
+            </div>
+            <div class="box">
+                <img src="event.jpeg" alt="">
+                 <h2 class="h-secondary center">EVENT</h2>
+                 <a href="event.html">LEFTOVERS FROM EVENT</a>
+                 
+             </div>
+            <!-- <div class="box">
+                <img src="PF.jpg" alt="">
+                <h2 class="h-secondary center">PORTFLIO MANAGEMENT</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div> -->
+            
+        </div>
+        <div class="chat">
+        <h1 >This is a chat system</h1> 
+         <button class="btn" href="">chat
+         <a href="">link text</a>
+        </button>
+        </div>
+        <div class="section6">
+            <div class="container">
+              <div class="section6_outerdiv">
+                <div class="section4_div1" id="section6_div1">
+                  <h1>CUSTOMER REVIEWS</h1>
+                </div>
+              </div>
+              <div class="section6_div">
+                <div class="section6_div_div" id="section6div1">
+                  <div class="reviewhead">
+                    <h4>Arwa K.</h4>
+                    <img src="w1.jpg" alt=""  width="40" height="40"/>
+                  </div>
+                  <p>The food was excellent also I ordered fruits from the fruit & vegetable section it was worth it!</p>
+                </div>
+                <div class="section6_div_div" id="section6div2">
+                  <div class="reviewhead">
+                    <h4>Anshul L.</h4>
+                    <img src="w5.jpeg" alt="" width="40" height="40"/>
+                  </div>
+                  <p>
+                    The chicken biryani from home cooked meals was very delicious! The quantity and quality
+                    was worth the cost.
+                  </p>
+                </div>
+                <div class="section6_div_div" id="section6div3">
+                  <div class="reviewhead">
+                    <h4>Hetal P.</h4>
+                    <img src="w3.jpg" alt="" width="40" height="40" />
+                  </div>
+                  <p>Excellent food. Menu is extensive and seasonal to a particularly high standard. Definitely fine dining.</p>
+                </div>
+                <div class="section6_div_div" id="section6div4">
+                  <div class="reviewhead">
+                    <h4>Vihaan M.</h4>
+                    <img src="w4.webp" alt="" width="40" height="40"/>
+                  </div>
+                  <p>
+                    I ordered food for my event from event section and it was the best experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+    </section>
+    
 </body>
 </html>
-
 
