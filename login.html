@@ -30,7 +30,7 @@
 </nav>
 
 <div class="container mt-4">
-<h3 style="color:white;"> Please Login Here: </h3>
+<h3 style="color:white;"> Please Sign in Here: </h3>
 <hr>
 
 <form action="/forphp/login.php" method="post">
@@ -51,6 +51,16 @@
     <label for="exampleInputPassword1" style="color:white;">Phone number</label>
     <input type="text" name="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter Phone number">
   </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" style="color:white;">Choose your purpose</label>
+    
+  
+    <select id="cars" name="purpose">
+      <option value="Donor">Donor</option>
+      <option value="Receiver">Receiver</option>
+     
+    </select>
+  </div>
 
   <!--
   <div class="form-group form-check">
@@ -58,7 +68,8 @@
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
    -->
-  <button type="submit" class="btn" style=" background-color:rgb(100, 247, 166);">Submit</button>
+  <button type="submit" class="btn" style=" background-color:rgb(100, 247, 166);"
+  onclick="document.location='log.html' " >Submit</button>
 </form>
 </body>
 </html>
